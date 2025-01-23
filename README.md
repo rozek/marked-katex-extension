@@ -2,6 +2,10 @@
 
 Render [katex](https://katex.org/) code in marked
 
+> in contrast to the [original](https://github.com/UziTech/marked-katex-extension), this version bundles the marked extension itself and all its dependencies into a single ESM file.
+>
+> as a consequence, you should now simply import from `https://rozek.github.io/marked-katex-extension/dist/marked-katex-extension.esm.js`
+
 ```markdown
 This is inline katex: $c = \\pm\\sqrt{a^2 + b^2}$
 

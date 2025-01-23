@@ -29,7 +29,7 @@
     "test:cover": "jest --coverage",
     "test:types": "tsd -f spec/index.test-d.ts -t src/index.d.ts",
     "lint": "eslint",
-    "build": "vite build",
+    "build": "vite build && cp ./src/katex.min.css ./dist",
     "update-specs": "node ./update-specs.js"
   },
   "repository": {

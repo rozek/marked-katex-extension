@@ -2,9 +2,15 @@
 
 Render [katex](https://katex.org/) code in marked
 
-> in contrast to the [original](https://github.com/UziTech/marked-katex-extension), this version bundles the marked extension itself and all its dependencies into a single ESM file.
+> In contrast to the [original](https://github.com/UziTech/marked-katex-extension), this version bundles the marked extension itself and all its dependencies into a single ESM file.
 >
-> as a consequence, you should now simply import from `https://rozek.github.io/marked-katex-extension/dist/marked-katex-extension.esm.js`
+> As a consequence, you should now simply import from `https://rozek.github.io/marked-katex-extension/dist/marked-katex-extension.esm.js`
+>
+> Additionally, it contains a copy of the [KaTeX stylesheet](https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css)
+>
+> You may therefore also change the related `<link>` element to
+>
+> `<link rel="stylesheet" href="https://rozek.github.io/marked-katex-extension/dist/katex.min.css">`
 
 ```markdown
 This is inline katex: $c = \\pm\\sqrt{a^2 + b^2}$
